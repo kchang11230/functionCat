@@ -1,62 +1,7 @@
-<!--<template>
-  <div class="flex flex-col h-screen bg-gray-100">-->
-<!-- Header with Configuration -->
-<!--<div class="bg-blue-600 p-1 flex items-center justify-between text-white shadow-md">
-  <button
-    @click="deployAIChat"
-    class="bg-blue-700 hover:bg-blue-800 text-white font-bold py-2 p-1 rounded flex items-center"
-  >
-    部署我的AIChat
-  </button>
-  <div>
-    <select id="model-select" v-model="model" class="select p-1 py-2 rounded bg-white text-black shadow-sm">
-      <option disabled selected>选择模型</option>
-      <option v-for="(modelOption, index) in modelOptions" :key="index" :value="modelOption.value">
-        {{ modelOption.label }}
-      </option>
-    </select>
-  </div>
-</div>-->
-<!-- Center Column (Chat) -->
-<!--<div class="flex-grow flex flex-col w-full bg-gray-900 text-white p-4 overflow-auto relative">-->
-<!-- Background Text -->
-<!--<div class="absolute inset-0 flex items-center justify-center pointer-events-none select-none">
-  <span class="text-6xl sm:text-8xl md:text-9xl lg:text-[10rem] font-bold text-white/10">AI Chat</span>
-</div>-->
-<!-- Chat Content -->
-<!--<div class="flex-grow overflow-y-auto mb-4 relative z-10">
-    <ul class="space-y-4">
-      <li v-for="(conv, index) in conversations" :key="index" class="bg-gray-800 p-3 rounded shadow-sm">
-        <strong>用户:</strong> {{ conv.user }}<br />
-        <strong>AI:</strong> {{ conv.ai }}
-      </li>
-    </ul>
-  </div>
-</div>-->
-<!-- Footer with Input -->
-<!--<div class="bg-gray-200 flex items-center p-4 shadow-inner">
-      <textarea
-        v-model="message"
-        placeholder="输入您的消息"
-        class="flex-grow mr-2 p-2 rounded bg-white text-black resize-none border border-gray-300 focus:outline-none focus:ring focus:border-blue-300"
-        @keyup.enter="sendMessage"
-        rows="1"
-      ></textarea>
-      <button
-        @click="sendMessage"
-        :disabled="!message || !model || loading"
-        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded shadow disabled:opacity-50"
-      >
-        {{ loading ? '发送中...' : '发送' }}
-      </button>
-    </div>
-  </div>
-</template>-->
-
 <template>
-    <div class="flex flex-col h-screen bg-gray-100">
+    <div class="flex flex-col h-screen bg-slate-50 p-4">
         <!-- Header with Configuration -->
-        <div class="bg-gradient-to-r from-blue-600 to-blue-500 p-2 flex items-center justify-between text-white shadow-lg">
+        <div class="bg-gradient-to-r from-blue-300 to-blue-200 p-2 flex items-center justify-between text-white shadow-lg">
             <button @click="deployAIChat"
                     class="bg-blue-800 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded-lg transition-all duration-300">
                 部署我的AIChat
