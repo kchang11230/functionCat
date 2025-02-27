@@ -3,7 +3,7 @@
         <!-- Header with Configuration -->
         <div class="bg-gradient-to-r from-blue-300 to-blue-200 p-2 flex items-center justify-between text-white shadow-lg">
             <button @click="deployAIChat"
-                    class="bg-blue-800 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded-lg transition-all duration-300">
+                    class="bg-blue-200 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded-lg transition-all duration-300">
                 部署我的AIChat
             </button>
             <div>
@@ -17,7 +17,7 @@
         </div>
 
         <!-- Center Column (Chat) -->
-        <div class="flex-grow flex flex-col w-full bg-gray-900 text-white p-6 overflow-auto relative">
+        <div class="flex-grow flex flex-col w-full bg-gray-100 text-white p-6 overflow-auto relative">
             <!-- Background Text -->
             <div class="absolute inset-0 flex items-center justify-center pointer-events-none select-none">
                 <span class="text-6xl sm:text-8xl md:text-9xl lg:text-[10rem] font-extrabold text-white/10">AI Chat</span>
@@ -26,7 +26,7 @@
             <!-- Chat Content -->
             <div class="flex-grow overflow-y-auto mb-4 relative z-10">
                 <ul class="space-y-4">
-                    <li v-for="(conv, index) in conversations" :key="index" class="bg-gray-800 p-4 rounded-xl shadow-md">
+                    <li v-for="(conv, index) in conversations" :key="index" class="bg-gray-400 p-4 rounded-xl shadow-md">
                         <div class="flex items-center justify-between">
                             <strong class="text-blue-400">用户:</strong>
                             <span>{{ conv.user }}</span>
@@ -41,7 +41,7 @@
         </div>
 
         <!-- Footer with Input -->
-        <div class="bg-gray-200 flex items-center p-4 shadow-inner rounded-t-3xl">
+        <div class="bg-white p-4 flex items-center p-4 shadow-inner rounded-t-3xl">
             <textarea v-model="message"
                       placeholder="输入您的消息"
                       class="flex-grow mr-2 p-3 rounded-lg bg-white text-gray-800 resize-none border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-300"
