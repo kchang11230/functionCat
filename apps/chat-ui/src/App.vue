@@ -20,7 +20,7 @@
         <div class="flex-grow flex flex-col w-full bg-gray-100 text-white p-6 overflow-auto relative">
             <!-- Background Text -->
             <div class="absolute inset-0 flex items-center justify-center pointer-events-none select-none">
-                <span class="text-6xl sm:text-8xl md:text-9xl lg:text-[10rem] font-extrabold text-white/10">AI Chat</span>
+                <span class="text-6xl sm:text-8xl md:text-9xl lg:text-[10rem] font-extrabold text-black/10">AI Chat</span>
             </div>
 
             <!-- Chat Content -->
@@ -49,7 +49,7 @@
                       rows="1"></textarea>
             <button @click="sendMessage"
                     :disabled="!message || !model || loading"
-                    class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-lg shadow-lg disabled:opacity-50 transition-all duration-300">
+                    class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-lg shadow-lg disabled:opacity-50">
                 {{ loading ? '发送中...' : '发送' }}
             </button>
         </div>
