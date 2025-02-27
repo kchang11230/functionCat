@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\apps",
+    "\\apps\\chat-ui",
+    "\\apps\\chat-ui\\public",
+    "\\apps\\chat-ui\\src",
+    "\\apps\\chat-ui\\src\\assets",
+    "\\apps\\chat-ui\\src\\components"
+  ],
+  "SelectedNode": "\\apps\\chat-ui\\vue.config.js",
+  "PreviewInSolutionExplorer": false
+}
